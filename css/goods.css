@@ -1,0 +1,149 @@
+a {
+    color: #000;
+}
+
+.active_item a {
+    position: relative;
+}
+
+.active_item a:before {
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #456EEF;
+    border-radius: 999px;
+    border: 2px solid #456EEF;
+
+}
+
+.classification {
+    position: fixed;
+    top: 176px;
+
+
+}
+
+.classification dt {
+
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.classification dd {
+
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.item {
+    padding: 30px;
+    height: 44%;
+    width: 33.3%;
+    /*background-color: pink;*/
+    /*border: 1px solid black;*/
+}
+
+.item .row img {
+    width: 100%;
+    border-radius: 10px;
+}
+.item .row h4 {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+.item .row p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.item .row p:before {
+    content: "$ ";
+}
+
+
+
+.item .row .btn {
+    position: relative;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: #456EEF;
+    color: white;
+}
+
+.item .row a::after {
+    position: absolute;
+    right: 20px;
+    font-family: "iconfont", serif;
+    content: "\e600";
+
+}
+
+.total {
+
+
+    float: right;
+    max-width: 75%;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+
+}
+.bag {
+    position: relative;
+    margin: 4px auto auto;
+
+
+    height: 18px;
+    width: 15px;
+    background: url("../icons/bag.png") no-repeat center;
+    background-size: contain;
+}
+
+.bag::after {
+    position: absolute;
+    padding: 0 2px;
+    top: -5px;
+    left: 16px;
+    content: "300";
+    height: 16px;
+    min-width: 16px;
+    background-color: red;
+    border-radius: 9999px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.circle {
+    float: right;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 3px solid #456EEF;
+}
+
+@media screen and (max-width: 990px) {
+    .classification {
+        position: static;
+
+    }
+
+    .classification dd {
+        width: 25%;
+        margin: 10px 0;
+        float: left;
+    }
+
+    .cart {
+        position: absolute;
+
+        top: 70px;
+        right: 0;
+    }
+}
