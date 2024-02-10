@@ -68,26 +68,14 @@
 
             <div class="detail_text">
                 <ul class="clearfix">
-                    <li class="col_list active_item" onclick="changePage(1);">详情</li>
-                    <li class="col_list" onclick="changePage(2);">产地</li>
-                    <li class="col_list" onclick="changePage(3);">评价</li>
+                    <li class="col_list active_item" data-col="1">详情</li>
+                    <li class="col_list" data-col="2">产地</li>
+                    <li class="col_list" data-col="3">评价</li>
                 </ul>
 
                 <p class="col_1 col" id="detail">
-                    详情<br>
-                    ****<br>
-                    ****
                 </p>
-                <p class="col_2 no_display col" id="producer">
-                    产地<br>
-                    ****<br>
-                    ****
-                </p>
-                <p class="col_3 no_display col" id="comment">
-                    评价<br>
-                    ****<br>
-                    ****
-                </p>
+
 
             </div>
         </div>
@@ -100,7 +88,8 @@
 
                         <button type="button" class="btn_minus" id="minus">-</button>
 
-                        <label for="count"></label><input class="count_input" type="text" id="count" value="1"
+                        <label for="count"></label><input disabled="disabled" class="count_input" type="text" id="count"
+                                                          value="1"
                                                           name="count">
                         <button type="button" class="btn_add" id="add">+</button>
                         <span>最大数量10</span>

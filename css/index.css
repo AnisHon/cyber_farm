@@ -77,4 +77,9 @@ body {
         /*background: url("../images/gu_tianle.jpg") no-repeat center;*/
         /*background-size: cover;*/
     }
+    .row .btn {
+
+        background-color: transparent;
+
+    }
 }
